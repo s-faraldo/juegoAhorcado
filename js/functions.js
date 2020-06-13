@@ -112,4 +112,4 @@ var comidas  = ['Milanesa', 'Pure', 'Pollo', 'Hamburguesa', 'Papas Fritas', 'Piz
 var peliculas  = ['Deadpool', 'Spiderman', 'Transformers', 'Starwars', 'Avengers', 'Los juegos del Hambre', 'Harry Potter'];
 
 
-var adivinar ="";
+var oculta ="";
