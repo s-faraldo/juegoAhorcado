@@ -1,12 +1,23 @@
-#container, .buttons {
+#container {
     text-align: center;
-    margin: 0px auto;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    background-color: #292929;
   }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #ff7e00;
+}
 
   .titulo{
     font-weight: bolder;
     font-size: 200%;
     font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-top: 0px;
   }
 
   #abecedario { text-align: center; }
@@ -34,13 +45,23 @@
   
   canvas {
     text-align: center;
+    background-color: #ff7e00;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .letra {
     width: 5%;
     text-align: center;
     margin: 5%;
-    background-color: orange;
+    background-color: #ff7e00;
     border: 3px solid white;
     border-radius: 5px;
+  }
+
+  .buttons {
+    text-align: center;
+    margin: 0px auto;
   }
