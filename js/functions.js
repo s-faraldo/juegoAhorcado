@@ -7,7 +7,7 @@ function canvas(){
     }
 
     Horca = () => { 
-    context.strokeStyle = '#444';
+    context.strokeStyle = 'whitesmoke';
     context.lineWidth = 10; 
     context.beginPath();
     //base
