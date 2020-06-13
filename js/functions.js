@@ -126,8 +126,3 @@ function generaPalabraComida() {
     console.log(adivinar);
   }
 
-  function Rayitas(num) {
-    for () {
-    }
-  }
-
