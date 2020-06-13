@@ -2,6 +2,27 @@
     text-align: center;
     margin: 0px auto;
   }
+
+  .titulo{
+    font-weight: bolder;
+    font-size: 200%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+
+  #abecedario { text-align: center; }
+
+  #abecedario > .row > button {
+    height: 3rem;
+    margin: 0.25rem;
+  }
+
+  #abecedario > .row > .btn-primary {
+    width: 3rem;
+  }
+  
+  #abecedario > .row > .btn-secondary {
+    width: 3rem;
+  }
   
   button {
     padding: 10px;
@@ -13,4 +34,13 @@
   
   canvas {
     text-align: center;
+  }
+
+  .letra {
+    width: 5%;
+    text-align: center;
+    margin: 5%;
+    background-color: orange;
+    border: 3px solid white;
+    border-radius: 5px;
   }
