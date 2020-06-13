@@ -109,20 +109,26 @@ function canvas(){
 }
 
 var comidas  = ['Milanesa', 'Pure', 'Pollo', 'Hamburguesa', 'Papas Fritas', 'Pizza', 'Panchos'];
+var pistacomida = [];
 var peliculas  = ['Deadpool', 'Spiderman', 'Transformers', 'Starwars', 'Avengers', 'Los juegos del Hambre', 'Harry Potter'];
-
-
+var pistapeliculas = [];
 var adivinar ="";
 
 function generaPalabraComida() {
     var rand = (Math.random() * 7).toFixed(0);
-    adivinar = comida[rand][0].toUpperCase();
+    adivinar = comida[rand].toUpperCase();
     console.log(adivinar);
   }
-
+  function pistaComida() {
+    document.getElementById("Pista").innerHTML = pistacomida[rand];
+  }
+  
   function generaPalabraPelicula() {
     var rand = (Math.random() * 7).toFixed(0);
     adivinar = peliculas[rand][0].toUpperCase();
     console.log(adivinar);
+  }
+  function pistaPeliculas() {
+    document.getElementById("Pista").innerHTML = pistapeliculas[rand];
   }
 
