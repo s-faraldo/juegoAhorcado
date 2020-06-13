@@ -113,10 +113,10 @@ function canvas(){
     })
 }
 
-var comidas  = ['Milanesa', 'Pure', 'Pollo', 'Hamburguesa', 'Papas Fritas', 'Pizza', 'Panchos'];
-var pistacomida = [];
+var comidas  = ['Milanesa', 'Pure', 'Pollo', 'Hamburguesa', 'Papas Fritas', 'Pizza', 'Chivito'];
+var pistacomida = ['Carne enpanizada', 'Suave y Blanco', '', 'Carne redonda al pan', 'Bastones fritos', 'Masa redonda con salsa', 'Carne al pan'];
 var peliculas  = ['Deadpool', 'Spiderman', 'Transformers', 'Starwars', 'Avengers', 'Los juegos del Hambre', 'Harry Potter'];
-var pistapeliculas = [];
+var pistapeliculas = ['', '', '', '', '', '', ''];
 var adivinar ="";
 
 function generaPalabraComida() {
