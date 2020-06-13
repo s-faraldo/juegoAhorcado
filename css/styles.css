@@ -46,19 +46,11 @@ html, body {
   
   canvas {
     text-align: center;
-<<<<<<< HEAD
     background-color: #ff7e00;
     padding-left: 41%;
     padding-right: 41%;
     padding-top: 10%;
     padding-bottom: 15%;
-=======
-    background-color: #497959;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-top: 20px;
-    padding-bottom: 20px;
->>>>>>> 33aa5a833e3d0b72cbb42129ca81dafdca8f8bcd
   }
 
   .letra {
