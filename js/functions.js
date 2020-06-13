@@ -10,12 +10,17 @@ function canvas(){
     context.strokeStyle = '#444';
     context.lineWidth = 10; 
     context.beginPath();
+    //base
     context.moveTo(175, 225);
     context.lineTo(5, 225);
+    //palo principal
     context.moveTo(40, 225);
     context.lineTo(25, 5);
     context.lineTo(100, 5);
     context.lineTo(100, 25);
+    //palito diagonal
+    context.moveTo(30, 55);
+    context.lineTo(50, 5);
     context.stroke();}
 
     Horca();
@@ -107,7 +112,3 @@ function canvas(){
     next.disabled = false
     })
 }
-
-var comidas  = ['Milanesa', 'Pure', 'Pollo', 'Hamburguesa', 'Papas Fritas', 'Pizza', 'Panchos'];
-var peliculas  = ['Deadpool', 'Spiderman', 'Transformers', 'Starwars', 'Avengers', 'Los juegos del Hambre', 'Harry Potter'];
-
