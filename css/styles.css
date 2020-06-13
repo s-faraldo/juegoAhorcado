@@ -1,0 +1,16 @@
+#container, .buttons {
+    text-align: center;
+    margin: 0px auto;
+  }
+  
+  button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    font-size: 1.4em;
+    cursor: pointer;
+  }
+  
+  canvas {
+    text-align: center;
+  }
