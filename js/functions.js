@@ -112,3 +112,22 @@ function canvas(){
     next.disabled = false
     })
 }
+
+var comidas  = ['Milanesa', 'Pure', 'Pollo', 'Hamburguesa', 'Papas Fritas', 'Pizza', 'Panchos'];
+var peliculas  = ['Deadpool', 'Spiderman', 'Transformers', 'Starwars', 'Avengers', 'Los juegos del Hambre', 'Harry Potter'];
+
+
+var adivinar ="";
+
+function generaPalabraComida() {
+    var rand = (Math.random() * 7).toFixed(0);
+    adivinar = comida[rand][0].toUpperCase();
+    console.log(adivinar);
+  }
+
+  function generaPalabraPelicula() {
+    var rand = (Math.random() * 7).toFixed(0);
+    adivinar = peliculas[rand][0].toUpperCase();
+    console.log(adivinar);
+  }
+
