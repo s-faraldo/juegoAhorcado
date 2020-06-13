@@ -18,14 +18,9 @@ html, body {
     color: white;
     font-weight: bolder;
     font-size: 200%;
-<<<<<<< HEAD
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    margin-top: 0%;
-    margin-bottom: 2%;
-=======
     font-family: "Walter Turncoat", cursive;
     margin-top: 0px;
->>>>>>> bdc0f7c0dd4027dad2fa383930030a2d1ae8800e
+    margin-bottom: 1%;
   }
 
   #abecedario {
@@ -56,19 +51,11 @@ html, body {
   
   canvas {
     text-align: center;
-<<<<<<< HEAD
-    background-color: #ff7e00;
-    padding-left: 22%;
-    padding-right: 22%;
-    padding-top: 3%;
-    padding-bottom: 4%;
-=======
     background-color: #497959;
     padding-left: 150px;
     padding-right: 150px;
     padding-top: 20px;
     padding-bottom: 20px;
->>>>>>> bdc0f7c0dd4027dad2fa383930030a2d1ae8800e
   }
 
   .letra {
