@@ -20,9 +20,12 @@ html, body {
     font-size: 200%;
     font-family: "Walter Turncoat", cursive;
     margin-top: 0px;
+    margin-bottom: 1%;
   }
 
-  #abecedario { text-align: center; }
+  #abecedario {
+    text-align: center;
+  }
 
   #abecedario > .row > button {
     height: 3rem;
@@ -38,9 +41,9 @@ html, body {
   }
   
   button {
-    width: 100px;
-    height: 45px;
-    margin: 20px;
+    width: 15%;
+    height: 6%;
+    margin: 3%;
     border: none;
     font-family: "Walter Turncoat", cursive;
     font-size: 1.4em;
@@ -67,5 +70,5 @@ html, body {
 
   .buttons {
     text-align: center;
-    width: 75px;
+    width: 11%;
   }
