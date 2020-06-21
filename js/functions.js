@@ -113,27 +113,22 @@ function canvas(){
     })
 }
 
-var comidas  = ['Milanesa', 'Pure', 'Pollo', 'Hamburguesa', 'Papas Fritas', 'Pizza', 'Chivito'];
-var pistacomida = ['Carne enpanizada', 'Suave y Blanco', '', 'Carne redonda al pan', 'Bastones fritos', 'Masa redonda con salsa', 'Carne al pan'];
-var peliculas  = ['Deadpool', 'Spiderman', 'Transformers', 'Starwars', 'Avengers', 'Los juegos del Hambre', 'Harry Potter'];
-var pistapeliculas = ['', 'Araña', 'Robots', 'Naves Espaciales', 'Superheroes', '', 'Magia'];
+var palabras  = ['Milanesa', 'Pure', 'Pollo', 'Hamburguesa', 'Papas Fritas', 'Pizza', 'Chivito', 'Deadpool', 'Spiderman', 'Transformers', 'Starwars', 'Avengers', 'Los juegos del Hambre', 'Harry Potter'];
+var pistas = ['Carne enpanizada', 'Suave y Blanco', '', 'Carne redonda al pan', 'Bastones fritos', 'Masa redonda con salsa', 'Carne al pan', '', 'Araña', 'Robots', 'Naves Espaciales', 'Superheroes', '', 'Magia'];
+
 var adivinar ="";
 
-function generaPalabraComida() {
-    var rand = (Math.random() * ).toFixed(0);
-    adivinar = comida[rand].toUpperCase();
+function generaPalabra() {
+    var rand = (Math.random() * 14).toFixed(0);
+    adivinar = palabras[rand].toUpperCase();
     console.log(adivinar);
   }
-  function pistaComida() {
-    document.getElementById("Pista").innerHTML = pistacomida[rand];
+  function pistaPalabra() {
+    document.getElementById("Pista").innerHTML = pistas[rand];
   }
-  
-  function generaPalabraPelicula() {
-    var rand = (Math.random() * 7).toFixed(0);
-    adivinar = peliculas[rand][0].toUpperCase();
-    console.log(adivinar);
+  function guiones() {
+  var num = adivinar.length;
+  for (var i = 0; i < num; i++) {
+    document.getElementById("guiones").innerHTML = "_";
   }
-  function pistaPeliculas() {
-    document.getElementById("Pista").innerHTML = pistapeliculas[rand];
-  }
-
+}
