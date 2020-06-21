@@ -2,8 +2,8 @@
 #container {
     text-align: center;
     margin: auto;
-    width: 50%;
-    height: 100%;
+    width: 75%;
+    height: 100vh;
     background-color: #292929;
   }
 
@@ -11,16 +11,40 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  color: white;
   background-color: #ff7e00;
+  font-family: "Walter Turncoat", cursive;
+}
+
+h3, h2, h1{
+  margin: 1%;
 }
 
   .titulo{
     color: white;
     font-weight: bolder;
     font-size: 200%;
-    font-family: "Walter Turncoat", cursive;
     margin-top: 0px;
     margin-bottom: 1%;
+  }
+
+  .col {
+    margin-bottom: 1%;
+    text-align: center;
+  }
+
+  .partidas{
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .pizarron{
+    background-color: #346b31;
+    background-image: url("../img/textura.png");
+    border: 9px solid #caa472;
+    height: 50%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 
   #abecedario {
@@ -41,34 +65,58 @@ html, body {
   }
   
   button {
-    width: 15%;
-    height: 6%;
-    margin: 3%;
+    width: 20%;
+    height: auto;
+    margin: 2%;
+    transition: transform .2s;
     border: none;
     font-family: "Walter Turncoat", cursive;
     font-size: 1.4em;
     cursor: pointer;
   }
-  
-  canvas {
-    text-align: center;
-    background-color: #497959;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+
+  .button:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
 
   .letra {
-    width: 5%;
+    width: 3rem;
+    margin: 1vh;
     text-align: center;
-    margin: 5%;
+    transition: transform .2s;
     background-color: #ff7e00;
     border: 3px solid white;
     border-radius: 5px;
   }
 
-  .buttons {
-    text-align: center;
-    width: 11%;
+  .letra:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .letra:disabled {
+    opacity: 0.5;
+  }
+
+  .inactive{
+    opacity: 0.5;
+  }
+
+  .oculto{
+    display: none;
+  }
+
+  picture {
+    position: relative;
+  }
+
+  picture img {
+    height: 50%;
+  }
+  #image5, #image4, #image3,
+  #image2, #image1, #image0 {
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+  .fade-in {
+    opacity: 1 !important;
   }

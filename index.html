@@ -12,54 +12,39 @@
         
     </head>
 
-    <body onload="canvas()">
+    <body>
         <div id="container">
             <p class="titulo">El Ahorcado</p>
-            <canvas id="hangman" width="180" height="230" style="border:10px solid #caa472;"></canvas>
-            <div class="button">
-                <button id="next">Next</button>
-                <button id="reset">Reset</button>
+            <div class="col">
+                <span class="partidas">Partidas Ganadas: <span id="ganadas">0</span></span>
+                <span class="partidas">Partidas Perdidas: <span id="perdidas">0</span></span>
+            </div>
+            <div class="pizarron">
+                <picture>
+                    <img src="img/ahorcado_6.png" alt="" id="image6">
+                    <img src="img/ahorcado_5.png" alt="" id="image5" class="oculto">
+                    <img src="img/ahorcado_4.png" alt="" id="image4" class="oculto">
+                    <img src="img/ahorcado_3.png" alt="" id="image3" class="oculto">
+                    <img src="img/ahorcado_2.png" alt="" id="image2" class="oculto">
+                    <img src="img/ahorcado_1.png" alt="" id="image1" class="oculto">
+                    <img src="img/ahorcado_0.png" alt="" id="image0" class="oculto">
+                </picture>
+                <h3 id="acierto"></h3>
+                <h2 class="palabra" id="palabra"></h2>
+                <div class="col">
+                    <h3>Intentos restantes: <span id="intentos">6</span></h3>
+                    <span id="hueco-pista"></span>
+                </div>
+            </div>
+            <div>
+                <button id="reset" onclick="inicio()" class="button">Reiniciar</button>
+                <button id="pista" onclick="pista()" class="button">Pista</button>
             </div>
             <div id="limit">
                 <div id="abecedario" class="small-wrap">
-                    <div class="row no-gutters">
-                      <button id="A" class="buttons">A</button>
-                      <button id="B" class="buttons">B</button>
-                      <button id="C" class="buttons">C</button>
-                      <button id="D" class="buttons">D</button>
-                      <button id="E" class="buttons">E</button>
-                      <button id="F" class="buttons">F</button>
-                      <button id="G" class="buttons">G</button>
-                    </div>
-                    <div class="row no-gutters">
-                      <button id="H" class="buttons">H</button>
-                      <button id="I" class="buttons">I</button>
-                      <button id="J" class="buttons">J</button>
-                      <button id="K" class="buttons">K</button>
-                      <button id="L" class="buttons">L</button>
-                      <button id="M" class="buttons">M</button>
-                      <button id="N" class="buttons">N</button>
-                    </div>
-                    <div class="row no-gutters">
-                      <button id="Ñ" class="buttons">Ñ</button>
-                      <button id="O" class="buttons">O</button>
-                      <button id="P" class="buttons">P</button>
-                      <button id="Q" class="buttons">Q</button>
-                      <button id="R" class="buttons">R</button>
-                      <button id="S" class="buttons">S</button>
-                      <button id="T" class="buttons">T</button>
-                    </div>
-                    <div class="row no-gutters">
-                      <button id="U" class="buttons">U</button>
-                      <button id="V" class="buttons">V</button>
-                      <button id="W" class="buttons">W</button>
-                      <button id="X" class="buttons">X</button>
-                      <button id="Y" class="buttons">Y</button>
-                      <button id="Z" class="buttons">Z</button>
-                      <button id="hint" class="buttons">?</button>
-                    </div>
+                </div>
             </div>
         </div>
-          
+        <script src="js/functions.js"></script>
     </body>
 </html>
