@@ -116,11 +116,11 @@ function canvas(){
 var comidas  = ['Milanesa', 'Pure', 'Pollo', 'Hamburguesa', 'Papas Fritas', 'Pizza', 'Chivito'];
 var pistacomida = ['Carne enpanizada', 'Suave y Blanco', '', 'Carne redonda al pan', 'Bastones fritos', 'Masa redonda con salsa', 'Carne al pan'];
 var peliculas  = ['Deadpool', 'Spiderman', 'Transformers', 'Starwars', 'Avengers', 'Los juegos del Hambre', 'Harry Potter'];
-var pistapeliculas = ['', '', '', '', '', '', ''];
+var pistapeliculas = ['', 'Araña', 'Robots', 'Naves Espaciales', 'Superheroes', '', 'Magia'];
 var adivinar ="";
 
 function generaPalabraComida() {
-    var rand = (Math.random() * 7).toFixed(0);
+    var rand = (Math.random() * ).toFixed(0);
     adivinar = comida[rand].toUpperCase();
     console.log(adivinar);
   }
