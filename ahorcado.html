@@ -3,23 +3,24 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/styles.css">
-        <script src="js/functions.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-        
-        
-        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>      
     </head>
 
     <body onload="inicio()">
-        <div id="container">
+        <div id="inicioJuego">
             <p class="titulo">El Ahorcado</p>
-            <div class="col">
-                <span class="partidas">Partidas Ganadas: <span id="ganadas"></span></span>
-                <span class="partidas">Partidas Perdidas: <span id="perdidas"></span></span>
-            </div>
+            <p class="descripcion">¡El clasico juego del ahorcado presentado por Game Room!<br></p>
+            <button class="button" id="jugar" onclick="jugar()">JUGAR</button>
+            <button class="button" id="volver" onclick="location.href='https://google.com';">VOLVER</button>
+        </div>
+            <div id="container" class="oculto">
             <div class="pizarron">
+                <div class="col">
+                    <span class="partidas">Partidas Ganadas: <span id="ganadas">0</span></span>
+                    <span class="partidas">Partidas Perdidas: <span id="perdidas">0</span></span>
+                </div>
                 <picture>
                     <img src="img/ahorcado_6.png" alt="" id="image6">
                     <img src="img/ahorcado_5.png" alt="" id="image5" class="oculto">
@@ -31,7 +32,7 @@
                 </picture>
                 <h3 id="acierto"></h3>
                 <h2 class="palabra" id="palabra"></h2>
-                <div class="col">
+                <div class="col1">
                     <h3>Intentos restantes: <span id="intentos">6</span></h3>
                     <span id="hueco-pista"></span>
                 </div>

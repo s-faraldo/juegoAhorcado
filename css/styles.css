@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
-#container {
+#container, #inicioJuego{
+    padding-top: 2%;
     text-align: center;
     margin: auto;
     width: 75%;
@@ -10,8 +11,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  color: white;
+  color: #e0dbd1;
   background-color: #ff7e00;
   font-family: "Walter Turncoat", cursive;
 }
@@ -27,29 +27,40 @@ h3, h2, h1{
   .titulo{
     color: white;
     font-weight: bolder;
-    font-size: 200%;
+    font-size: 300%;
     margin-top: 0px;
     margin-bottom: 1%;
+    padding-top: 100px;
+  }
+
+  .descripcion{
+    color: white;
+    font-size: 150%;
   }
 
   .col {
     margin-bottom: 1%;
+    padding-top: 1%;
+    padding-bottom: 2%;
     text-align: center;
   }
 
   .partidas{
     margin-left: 1%;
     margin-right: 1%;
+    font-size: 120%;
   }
 
   .pizarron{
     background-color: #346b31;
-    background-image: url("../img/textura.png");
+    background-image: url(../img/pizarron.jpg);
+    background-size: cover;
     border: 9px solid #caa472;
-    height: 50%;
+    border-image: url(../img/madera.jpg) 20 round;
+    height: 60%;
     margin-left: 20%;
     margin-right: 20%;
-  }
+    }
 
   .acierto {
     animation: zoomInOut 1s ease;
@@ -70,8 +81,13 @@ h3, h2, h1{
     background-image: url("../img/papel.jpg");
     border: none;
     font-family: "Walter Turncoat", cursive;
-    font-size: 1.4em;
+    font-size: 1.4vw;
+    font-weight: bolder;
     cursor: pointer;
+  }
+
+  #jugar,#volver{
+    margin-top: 25%;
   }
 
   .button:hover {
@@ -79,8 +95,8 @@ h3, h2, h1{
   }
 
   .letra {
-    width: 5rem;
-    margin: 0.5vh;
+    width: 6rem;
+    margin: 0.9vh;
     text-align: center;
     transition: transform .2s;
     background-image: url("../img/papel.jpg");
