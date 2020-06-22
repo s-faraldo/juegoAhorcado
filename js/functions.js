@@ -1,7 +1,7 @@
 // ### VARIABLES ###
 
 // Array de palabras
-var palabras = [["atlantico", "Un océano"], ["computadora", "Una calculadora evolucionada"], ["rosa", "Flor del amor"], ["plaza", "Espacio público verde"], ["rueda", "Gran invento"], ["manzana", "Una fruta"], ["jenga", "Un juego de caja"], ["pino", "Un árbol del pinar"], ["everest", "Famosa montaña"], ["relampago", "Antecede al trueno"], ["gato", "Un animal"], ["alemania", "Un país famoso por su cerveza"], ["uruguay", "Un país de vacas"], ["dibujo", "Representación gráfica"], ["picnic", "Actividad en la naturaleza"], ["bizcocho", "De la panadería"], ["pastel", "De la pastelería"], ["biblioteca", "Lugar para estudiar"], ["football", "Deporte mundial"], ["mermelada", "Pasta de frutas comestibles"],["oso", "Animal que hiberna"],["liceo", "Esclavos del..."],["rock", "Estilo de musica donde se usa la guitarra"],["pasta", "Comida italiana"],["francia", "El pais del amor"],["mate", "Bebida bien Uruguaya"],["biologia", "Ciencia que estudia los seres vivos"],["olla", "Utensilio de cocina"],["galletitas", "Bien de paraguayo"],["incas", "Razas indigenas"],["paraguay", "País que no existe"],["caleidoscopio", "Tubo con 3 espejos"]];
+var palabras = [["atlantico", "Un océano"], ["computadora", "Una calculadora evolucionada"], ["rosa", "Flor del amor"], ["plaza", "Espacio público verde"], ["rueda", "Gran invento"], ["manzana", "Una fruta"], ["jenga", "Un juego de caja"], ["pino", "Un árbol del pinar"], ["everest", "Famosa montaña"], ["relampago", "Antecede al trueno"], ["gato", "Un animal"], ["alemania", "Un país famoso por su cerveza"], ["uruguay", "Un país de vacas"], ["dibujo", "Representación gráfica"], ["picnic", "Actividad en la naturaleza"], ["bizcocho", "De la panadería"], ["pastel", "De la pastelería"], ["biblioteca", "Lugar para estudiar"], ["football", "Deporte mundial"], ["mermelada", "Pasta de frutas comestibles"],["oso", "Animal que hiberna"],["liceo", "Esclavos del..."],["rock", "Estilo de musica donde se usa la guitarra"],["pasta", "Comida italiana"],["francia", "El pais del amor"],["mate", "Bebida bien Uruguaya"],["biologia", "Ciencia que estudia los seres vivos"],["olla", "Utensilio de cocina"],["galletitas", "Bien de paraguayo"],["incas", "Razas indigenas"],["paraguay", "País que no existe"],["caleidoscopio", "Tubo con 3 espejos"],["eclipse", "Tercera pelicula de crepusculo"],["ra", "luna roja"],["mario", "plomero rojo"],["syso", "System.out.println();"],["syso", "System.out.println();"]];
 // Palabra a averiguar
 var palabra = "";
 // Nº aleatorio
@@ -28,7 +28,7 @@ var contG;
 
 // Escoger palabra al azar
 function generaPalabra() {
-  rand = (Math.random() * 31).toFixed(0);
+  rand = (Math.random() * palabras.length).toFixed(0);
   palabra = palabras[rand][0].toUpperCase();
   console.log(palabra);
 }
